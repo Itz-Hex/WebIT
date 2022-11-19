@@ -1,0 +1,64 @@
+<%- include("./partitials/header.partial.ejs") %>
+
+<body>
+
+    <%- include("./partitials/nav.partial.ejs") %>
+
+    <div class="content">
+        <div class="content-main">
+            <div class="post-header">
+                <img src="https://picsum.photos/1200/600" alt="Post Header Image" class="post-header-image">
+                <div class="post-header-content">
+                    <h1 class="post-header-title"><%= post.title %></h1>
+                    <h3 class="post-header-author">By <%= post.author %></h3>
+                </div>
+            </div>
+            <p class="post-body"><%= post.body %></p>
+        </div>
+
+        <div class="wrapper">
+            <div class="side-panel">
+                <div class="box subscribe">
+                    <div class="box-header">
+                        <h1 class="box-header-title">Subscribe to our newsletter!</h1>
+                        <span class="box-header-sub_title">Subscribe to our newsletter and recieve weekly updates on new blog posts!</span>
+                    </div>
+                    <div class="box-content">
+                        <form action="/subscribe" method="post" class="box-content-form">
+                            <input type="email" name="email" id="email" class="box-content-form-input" placeholder="Your email" required>
+                            <input type="submit" value="Subscribe" class="box-content-form-submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="box potd">
+                    <div class="box-header">
+                        <h1 class="box-header-title">Post of the day!</h1>
+                        <span class="box-header-sub_title">Today's randomly picked post for you to read!</span>
+                    </div>
+                    <div class="box-content">
+                        <img src="https://picsum.photos/500/200" alt="Post Header Image" class="post-image">
+                        <h1 class="post-title"><%= potd[0].title %></h1>
+                        <p class="post-preview_text"><%= potd[0].body.split(" ", 50).join(" "); %>...</p>
+                        <a href="/blog/random-post" class="box-item-content-more_button">
+                            <button>
+                                <span>Read More</span>
+                                <i class="bx bx-chevron-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="box ad-box">
+                    <div class="ad">
+                        <div class="ad-content">
+                            <h1 class="ad-title">This is an advertisment.</h1>
+                            <p class="ad-text">Lorem ispum dolor sit amet consectur adipiscing elit. <a href="#">Visit Site ></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("./partitials/footer.partial.ejs") %>
+
+</body>
