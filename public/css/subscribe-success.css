@@ -1,0 +1,22 @@
+.wrapper {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 60%;
+    background-color: var(--secondary);
+    border-radius: var(--border-radius-big);
+    padding: 2.4rem;
+}
+
+.container h1 {
+    color: var(--accent);
+    font-size: 3.6rem;
+}
+.container h3 {
+    color: var(--text);
+    font-size: 2.4rem;
+}

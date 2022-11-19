@@ -1,0 +1,25 @@
+{
+  "name": "webit",
+  "version": "1.0.0",
+  "description": "A web development focused blog site.",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon node app.js",
+    "devStart": "nodemon node app.js"
+  },
+  "keywords": [
+    "website",
+    "development",
+    "blog"
+  ],
+  "author": "Ollie Wells",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.3"
+  }
+}
