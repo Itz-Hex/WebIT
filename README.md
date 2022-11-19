@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Itz-Hex/WebIT">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+    <img src="logo.png" alt="Logo">
   </a>
 
 <h3 align="center">WebIT</h3>
@@ -116,7 +116,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: screenshot.png
+[product-screenshot]: WebIT.png
 [Node.js]: https://img.shields.io/badge/node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=green
 [Node-url]: https://nodejs.org
 [CSS]: https://img.shields.io/badge/css-000000?style=for-the-badge&logo=css3&logoColor=cyan
